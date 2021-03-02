@@ -1,0 +1,64 @@
+body {
+  background: url("./images/bg-pattern-top.svg") no-repeat left top,
+    hsl(182, 58%, 33%);
+  /* background-size: 300px 100px; */
+}
+
+.card {
+  width: 30%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 20px;
+  margin-top: 30%;
+}
+
+.card_content {
+  margin: auto;
+  margin-top: -50px;
+  text-align: center;
+}
+
+.card_bannerImg {
+  width: 100%;
+  object-fit: contain;
+  border-radius: 20px 20px 0 0;
+}
+
+.card_content > img {
+  width: 100px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin: auto;
+}
+
+.card_social {
+  border-top: 2px solid gray;
+  padding: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card_social > span {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.card_social > span > strong {
+  font-weight: 800px;
+}
+hr {
+  background: gray;
+}
+@media only screen and (max-width: 700px) {
+  .card {
+    width: 60%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .card {
+    width: 90%;
+  }
+}
